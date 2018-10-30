@@ -28,7 +28,7 @@ XML署名時に、公開鍵情報としてX.509公開鍵証明書を埋め込み
 
 
 ### Validate.java
-`$ javac Validate.java`
+`$ java Validate [input XML path]`
 
 
 ## License
