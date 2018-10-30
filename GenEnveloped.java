@@ -20,12 +20,21 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 
 public class GenEnveloped {
-  public static void main(String[] args) throws Exception {
-    String inXmlPath = args[0];
-    String outXmlPath = args[1];
-    String privateKeyPath = args[2];
-    String certPath = args[3];
+  public static void main(String[] args) {
+    if (args.length != 4) {
+      System.err.println("Usage: java GenEnveloped [input XML path] [output XML path] [private key path (pk8)] [certificate path]");
+      System.exit(1);
+    }
 
+    try {
+      genEnveloped(args[0], args[1], args[2], args[3]);
+    } catch (Exception e) {
+      System.err.println(e);
+      System.exit(1);
+    }
+  }
+
+  private static void genEnveloped(String inXmlPath, String outXmlPath, String privateKeyPath, String certPath) throws Exception {
     // Create a DOM XMLSignatureFactory that will be used to generate the
     // enveloped signature
     XMLSignatureFactory fac = XMLSignatureFactory.getInstance("DOM");
