@@ -34,7 +34,7 @@ public class GenEnveloped {
     }
   }
 
-  private static void genEnveloped(String inXmlPath, String outXmlPath, String privateKeyPath, String certPath) throws Exception {
+  public static void genEnveloped(String inXmlPath, String outXmlPath, String privateKeyPath, String certPath) throws Exception {
     // Create a DOM XMLSignatureFactory that will be used to generate the
     // enveloped signature
     XMLSignatureFactory fac = XMLSignatureFactory.getInstance("DOM");
