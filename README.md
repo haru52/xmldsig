@@ -5,7 +5,7 @@ XMLファイルに署名／XML署名を検証するJavaプログラム
 
 
 ## Description
-XML署名時に、公開鍵情報としてX.509公開鍵証明書を埋め込みます。
+XML署名時に、公開鍵情報としてX.509公開鍵証明書を埋め込みます。
 
 
 ### File List
@@ -15,16 +15,12 @@ XML署名時に、公開鍵情報としてX.509公開鍵証明書を埋め込�
 
 
 ## Requirements
-- macOS 10.13.6 or later
 - OpenSSL 1.0.2p or later
 - Java 11.0.1 or later (OpenJDK)
 
 
 ## Installation
-```
-$ javac GenEnveloped.java
-$ javac Validate.java
-```
+`$ javac GenEnveloped.java Validate.java`
 
 
 ## Usages
@@ -38,7 +34,7 @@ $ javac Validate.java
 
 ## License
 ご自由にお使いください。
-
+
 
 ## Author
 [haru52](https://github.com/haru52)
