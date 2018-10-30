@@ -93,7 +93,6 @@ public class Validate {
       throw new KeySelectorException("No KeyValue element found!");
     }
 
-    //@@@FIXME: this should also work for key types other than DSA/RSA
     static boolean algEquals(String algURI, String algName) {
       if (algName.equalsIgnoreCase("RSA") && algURI.equalsIgnoreCase(SignatureMethod.RSA_SHA256))
         return true;
