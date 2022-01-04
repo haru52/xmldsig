@@ -5,33 +5,39 @@
 XML ファイルに署名／XML 署名を検証する Java プログラムです。  
 XML 署名時に、公開鍵情報として X.509 公開鍵証明書を埋め込みます。
 
-### File List
+## File list
 
-- GenEnveloped.java：XML ファイルに署名
-- Validate.java：XML 署名を検証
-- envelope.xml：サンプル XML ファイル
+- `GenEnveloped.java`：XML ファイルに署名
+- `Validate.java`：XML 署名を検証
+- `envelope.xml`：サンプル XML ファイル
 
 ## Requirement
 
-- Java 11.0.1 or later
+- Java v11.0.1 or later
 
 ## Installation
 
-`$ javac GenEnveloped.java Validate.java`
+```console
+javac GenEnveloped.java Validate.java
+```
 
 ## Usage
 
 ### GenEnveloped.java
 
-`$ java GenEnveloped [input XML path] [output XML path] [private key path (pk8)] [certificate path]`
+```console
+java GenEnveloped [input XML path] [output XML path] [private key path (pk8)] [certificate path]
+```
 
 ### Validate.java
 
-`$ java Validate [input XML path]`
+```console
+java Validate [input XML path]
+```
 
 ## Author
 
-[haru52](https://github.com/haru52)
+[haru](https://github.com/haru52)
 
 ## References
 
