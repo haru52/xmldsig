@@ -1,3 +1,5 @@
+// ref. https://docs.oracle.com/javase/6/docs/technotes/guides/security/xmldsig/Validate.java
+
 import javax.xml.crypto.*;
 import javax.xml.crypto.dsig.*;
 import javax.xml.crypto.dsig.dom.DOMValidateContext;

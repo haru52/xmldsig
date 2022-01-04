@@ -1,3 +1,5 @@
+// ref. https://docs.oracle.com/javase/6/docs/technotes/guides/security/xmldsig/GenEnveloped.java
+
 import javax.xml.crypto.dsig.*;
 import javax.xml.crypto.dsig.dom.DOMSignContext;
 import javax.xml.crypto.dsig.keyinfo.*;
