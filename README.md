@@ -37,7 +37,7 @@ java Validate [input XML path]
 
 ## Author
 
-[haru](https://github.com/haru52)
+[haru](https://haru52.com/)
 
 ## References
 
